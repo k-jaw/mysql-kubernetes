@@ -8,6 +8,8 @@ That is where the MySQL Operator for Kubernetes becomes useful. It does not turn
 
 On Oracle Kubernetes Engine (OKE), that model becomes especially practical because the database runtime, application runtime, image registry, and backup target can all be wired into a cloud-native workflow.
 
+Demo repository: [k-jaw/mysql-kubernetes](https://github.com/k-jaw/mysql-kubernetes)
+
 ## The Operational Problem
 
 A useful MySQL demo has to prove more than provisioning. It has to prove the operational loop:
