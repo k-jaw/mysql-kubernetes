@@ -139,16 +139,6 @@ make primary
 
 This is where database operations become more than container operations. Replacing a pod is necessary, but it is not sufficient. The database topology also has to return to a healthy state with a writable primary.
 
-### Stable Application Path
-
-The application should continue to use services and MySQL Router instead of pod-specific endpoints.
-
-```bash
-curl /topology
-```
-
-That view matters because it shows what the application sees. The app should not need to know which MySQL pod is primary today. Router and the database topology absorb that complexity below the application layer.
-
 ### Backup and Restore Proof
 
 A backup is only half the story. A restore proves that the backup artifact can initialize a new runtime.
