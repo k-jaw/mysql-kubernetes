@@ -4,7 +4,7 @@ MySQL is one of the databases developers trust most when an application needs a 
 
 Running MySQL on Kubernetes starts with deployment, but the real value shows up when the full operational loop is repeatable. Teams need a consistent way to route application traffic, recover from failure, change configuration, protect data with backups, and prove that a restore actually works. Those Day 2 operations are what turn a database deployment into a reliable operating model.
 
-Kubernetes makes MySQL operations even better when the lifecycle around the database becomes declarative and repeatable. It does not turn MySQL into something else. MySQL is still MySQL. That is where the MySQL Operator for Kubernetes becomes useful: instead of treating database lifecycle tasks as a collection of manual steps, scripts, and tribal runbooks, the operator lets teams express the desired state of a MySQL InnoDB Cluster through Kubernetes resources.
+Kubernetes makes MySQL operations even better when the lifecycle around the database becomes declarative and repeatable. The MySQL Operator for Kubernetes lets teams express the desired state of a MySQL InnoDB Cluster through Kubernetes resources instead of coordinating manual steps, scripts, and runbooks.
 
 On Oracle Kubernetes Engine (OKE), that model becomes especially practical because the database runtime, application runtime, image registry, and backup target can all be wired into a cloud-native workflow.
 
