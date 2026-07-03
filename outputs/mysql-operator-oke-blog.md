@@ -1,8 +1,8 @@
 # MySQL on OKE: Database Operations as Kubernetes State
 
-Running MySQL on Kubernetes starts with provisioning, but the real value shows up when the operational loop is repeatable.
+MySQL is one of the databases developers reach for when an application needs a proven, familiar, open source relational engine. Kubernetes has become the orchestration layer teams trust to run and scale modern workloads. Put them together, and the question gets interesting: how do you run MySQL with the same declarative, repeatable operating model that Kubernetes brings to applications?
 
-After the first pod is running, teams still need a consistent way to route application traffic, recover from failure, change configuration, protect data with backups, and prove that a restore actually works. Those Day 2 operations are what turn a database deployment into a reliable operating model.
+Running MySQL on Kubernetes starts with deployment, but the real value shows up when the full operational loop is repeatable. Teams need a consistent way to route application traffic, recover from failure, change configuration, protect data with backups, and prove that a restore actually works. Those Day 2 operations are what turn a database deployment into a reliable operating model.
 
 That is where the MySQL Operator for Kubernetes becomes useful. It does not turn MySQL into something else. MySQL is still MySQL. The operating API changes: instead of treating database lifecycle tasks as a collection of manual steps, scripts, and tribal runbooks, the operator lets teams express the desired state of a MySQL InnoDB Cluster through Kubernetes resources.
 
